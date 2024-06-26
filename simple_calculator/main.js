@@ -16,16 +16,6 @@ function div(n1, n2){
     return res;
 };
 
-// function for showing result
-function showres(opFunc, opName){
-    // console.log(operation);
-    var [n1, n2] = get_inputs();
-    res = opFunc(n1, n2);
-    document.getElementById('outputLabel').innerHTML = opName;
-    document.getElementById('output').value = String(res);
-    // alert(String(res) + ' ' + operation);
-};
-
 // function for retrieving inputs
 function get_inputs(){
     var n1 = Number(document.getElementById('num1').value);
@@ -34,8 +24,15 @@ function get_inputs(){
     return [n1, n2];
 }
 
-// execution of specific operation on specific button click
+// function for showing result
+function showres(opFunc, opName){
+    var [n1, n2] = get_inputs();
+    res = opFunc(n1, n2);
+    document.getElementById('outputLabel').innerHTML = opName;
+    document.getElementById('output').value = String(res);
+};
 
+// execution of specific operation on specific button click
 var sumop = document.getElementById('sum');
 sumop.addEventListener('click', function(){
     // var [n1, n2] = get_inputs();
