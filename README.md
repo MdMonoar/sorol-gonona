@@ -1,1 +1,1 @@
-<center> # Tiny Projects With JavaScript </center>
+# <center>Tiny Projects With JavaScript </center>
