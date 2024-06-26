@@ -1,1 +1,1 @@
-# <p align="center">H3 that is center aligned</p>
+# <p align="center">Tiny JavaScript Projects</p>
